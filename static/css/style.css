@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: url('https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2014/01/07/101317308-show-thumb-sharktank-1600x900.1910x1000.jpg');
+  background-color: #cccccc;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn{
+  border-radius: 12px;
+  position: absolute;
+  right: 525px;
+  bottom: 200px ;
+  font-family : 'Noto Serif', sans-serif;
+  color : #ffffff;
+  font-size: 180%;
+  padding : 20px 40px;
+  border: solid #ffffff 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}

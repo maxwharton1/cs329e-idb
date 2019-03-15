@@ -23,25 +23,9 @@ def thisShark(shark):
 def thisComp(thisComp):
     return render_template('thisComp.html')
 
-'''
-@app.route('/oleary')
-def oleary(shark):
-    return render_template("kevin_oleary.html")
-
-@app.route('/cuban') #why don't we do it by
-def cuban(shark):
-    return render_template("mark_cuban.html")
-
-@app.route('/daymond_john')
-def john():#
-    return render_template('john.html')
-
-
-@app.route('/herjavec')
-def herjavec(compName):
-    return render_template('robert_herjavec.html')
-
-'''
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 if __name__ == "__main__":
 
