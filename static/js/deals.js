@@ -470,6 +470,8 @@ function thisComp(){
   }
 
   var dict = deals[i]["company"];
+
+
   document.getElementById('info').innerHTML += "<img src= " + dict["picture"] + "alt='picture' class='img-thumbnail'><br></br>";
   for (var key in dict){
     document.getElementById('info').innerHTML += key + ": "+ dict[key] + "<br></br>";
