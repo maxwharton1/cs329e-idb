@@ -248,3 +248,7 @@ sample = {
          }
     ]
 }
+
+with open('sharks.json', 'w') as fp:
+    json.dump(sample, fp, indent=4)
+#end of book.py
