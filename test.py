@@ -3,6 +3,7 @@ import sys
 import unittest
 from models import db, Shark, Investment
 class DBTestCases(unittest.TestCase):
+	#these tests have not been run yet and may not work
 	
 	#tests if inserting a shark in to the db works
 	def test_source_insert_1(self):

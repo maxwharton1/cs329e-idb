@@ -38,6 +38,20 @@ def thisComp(thisComp):
 def about():
     return render_template('about.html')
 
+import subprocess
+@app.route('/test/')
+def test():
+	#this may or may not work, idk what to put in the test.html file to display the output
+    p = subprocess.Popen(["coverage", "run", "--branch", "test.py"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            stdin=subprocess.PIPE)
+    out, err = p.communicate()
+    output=err+out
+    output = output.decode("utf-8") #convert from byte type to string type
+    
+    return render_template('test.html', output = "<br/>".join(output.split("\n")))
+
 if __name__ == "__main__":
 
     app.run(debug = True)
