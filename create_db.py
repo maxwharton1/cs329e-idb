@@ -10,9 +10,9 @@ def load_json(filename):
 
 
 def create_sharks():
-    sharks = load_json('sharks.json') #loads the recently created json file
+    sharks1 = load_json('sharks.json') #loads the recently created json file
 
-    for oneShark in sharks['sharks']:
+    for oneShark in sharks1['sharks']:
         name = oneShark['name']
         invested = oneShark['invested']
         deals = oneShark['deals']
