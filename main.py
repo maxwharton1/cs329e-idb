@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from create_db import app, db, Book, create_books
 
 app = Flask(__name__)
 
@@ -8,7 +9,8 @@ def index(): #this should route to the landing page
 
 @app.route('/sharks')
 def sharks():
-    return render_template('sharks.html')
+    books = db.session.query(Book).all()
+    return render_template('sharks.html', books = books)
 
 @app.route('/deals')
 def deals():
