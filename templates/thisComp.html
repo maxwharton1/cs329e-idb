@@ -1,8 +1,28 @@
 {% extends 'layout.html' %}
 {% block body %}
-  <div id = "info"></div>
-  <div class = "list-group", id="list"></div>
-  <script>thisComp({{deals}})</script>
+
+{% if deal == [] %}
+  <p>No deal exists</p>
+{% else %}
+  {% for thisDeal in deal%}
+    <img src= "{{thisDeal.picture}}" alt= "picture" class= "img-thumbnail"><br></br>
+    {{thisDeal.name}}<br></br>
+    Episode: {{thisDeal.episode}} <br></br>
+    Founders: {% for j in thisDeal.founders %} {{j}} {% endfor %}
+    Location: {{thisDeal.location}} <br></br>
+    Investment: {{thisDeal.investment}}<br></br>
+    Equity: {{thisDeal.equity}}<br></br>
+    {{thisDeal.description}}<br></br>
+
+    <div class = "list-group", id="list">
+
+         {% for i in range(thisDeal.sharks | length)%}
+            <a href= "../shark/{{thisDeal.sharksURL[i]}}" class= "list-group-item list-group-item-action active">{{thisDeal.sharks[i]}}</a>
+         {% endfor %}
+    </div>
+
+  {% endfor %}
+{% endif %}
 
 
 {% endblock %}

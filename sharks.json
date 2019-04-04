@@ -1,54 +1,66 @@
-import json
-sample = {
+{
     "sharks" : [
         {
             "name" : "Kevin O'Leary",
+            "url" : "Kevin_Oleary",
             "invested" : "8,543,000",
             "deals" : 40,
             "episodes" : 131,
             "picture" : "https://s.abcnews.com/images/Business/GTY_kevin_oleary_2_kab_150929_16x9_992.jpg?resize=1080%2C608&ssl=1",
-            "investments" : [1,2,3,4]
+            "investments" : ["Zipz","Toygaroo","How Do You Roll?","Jump Forward"],
+            "investmentsURL" : ["Zipz","Toygaroo","How_Do_You_Roll?","Jump_Forward"]
         },
 
         {
            "name" :"Robert Herjavec",
+           "url" : "Robert_Herjavec",
            "invested" : "16,598,333",
            "deals" : 57,
            "episodes" : 126,
            "picture" : "https://amp.businessinsider.com/images/56ad203b58c3238d008b69be-750-562.jpg?resize=1080%2C608&ssl=1",
-           "investments" : [4,5,6,7,9]
+           "investments" : ["Jump Forward","Zero Pollution Motors","Chord Buddy","Hillbilly Brand","Happy Feet"],
+           "investmentsURL" : ["Jump_Forward","Zero_Pollution_Motors","Chord_Buddy","Hillbilly_Brand","Happy_Feet"]
+
         },
         {
            "name" : "Jeff Foxworthy",
+           "url" : "Jeff_Foxworthy",
            "invested" : "75,000",
            "deals" : 2,
            "episodes" : 2,
            "picture" : "https://cdn1.edgedatg.com/aws/v2/abc/SharkTank/episode/248748/dd11ddb14c1c532d471586d92c7c99c7/1228x691-Q90_dd11ddb14c1c532d471586d92c7c99c7.jpg?resize=1080%2C608&ssl=1",
-           "investments" : [7]
+           "investments" : ["Hillbilly Brand"],
+           "investmentsURL" : ["Hillbilly_Brand"]
         },
         {
           "name" : "Mark Cuban",
+          "url" : "Mark_Cuban",
           "invested" : "19,850,000",
           "deals" : 85,
           "episodes" : 111,
           "picture" : "https://static.businessinsider.com/image/548a1d946bb3f7097aa03d8a-750.jpg?resize=1080%2C608&ssl=1",
-          "investments" : [2,8,10,11,12]
+          "investments" : ["Toygaroo","BeatBox Beverages","Gameday Couture","LOLIWARE","Villy Customs"],
+          "investmentsURL" : ["Toygaroo","BeatBox_Beverages","Gameday_Couture","LOLIWARE","Villy_Customs"]
         },
         {
           "name" : "Daymond John",
+          "url" : "Daymond_John",
           "invested" : "8,567,000",
           "deals" : 61,
           "episodes" : 100,
           "picture" : "https://amp.businessinsider.com/images/55ad68802acae78b0e8b8204-750-562.jpg?resize=1080%2C608&ssl=1",
-          "investments" : [7,13,14,15,16]
+          "investments" : ["Hillbilly Brand","TITIN","One Sole","Hells Bells Helmet","Spikeball"],
+          "investmentsURL" : ["Hillbilly_Brand","TITIN","One_Sole","Hells_Bells_Helmet","Spikeball"]
         },
         {
           "name" : "Barbara Corcoran",
+          "url" : "Barbara_Corcoran",
           "invested" : "5,465,000",
           "deals" : 53,
           "episodes" : 82,
           "picture" : "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2013/11/26/101229657-shark-tank-barbara-corcoran.jpg?v=1502890423?resize=1080%2C608&ssl=1",
-          "investments" : [11,12]
+          "investments" : ["LOLIWARE","Villy Customs"],
+          "investmentsURL" : ["LOLIWARE","Villy_Customs"]
         }
     ],
 
@@ -56,6 +68,7 @@ sample = {
     "deals" : [
         {
         "id" : 1,
+        "url" : "Zipz",
          "name" : "Zipz",
          "episode" : "6-11",
          "founders" : ["Andrew McMurray"],
@@ -64,10 +77,12 @@ sample = {
          "investment" : "2,500,000",
          "equity" : "10%",
          "picture" : "https://s-i.huffpost.com/gen/2837284/images/o-OLEARY-WINE-facebook?resize=1080%2C608&ssl=1",
-         "sharks" : ["Kevin O'Leary"]
+         "sharks" : ["Kevin O'Leary"],
+         "sharksURL" : ["Kevin_Oleary"]
         },
         {
          "id" : 2,
+         "url" : "Toygaroo",
          "name" : "Toygaroo",
          "episode" : "2-2",
          "founders" : ["Nikki Pope"],
@@ -76,10 +91,12 @@ sample = {
          "investment" : "200,000",
          "equity" : "40%",
          "picture" : "https://i0.wp.com/kirktaylor.com/wp-content/uploads/toygaroo-shark-tank-nikki-pope.jpg?resize=1080%2C608&ssl=1",
-         "sharks" : ["Kevin O'Leary", "Mark Cuban"]
+         "sharks" : ["Kevin O'Leary", "Mark Cuban"],
+         "sharksURL" : ["Kevin_Oleary", "Mark_Cuban"]
         },
         {
          "id" : 3,
+         "url" : "How_Do_You_Roll?",
          "name" : "How Do You Roll?",
          "episode" : "4-16",
          "founders" : ["Peter Yung", "Yuen Yung"],
@@ -88,11 +105,13 @@ sample = {
          "investment" :  "1,000,000",
          "equity" : "20%",
          "picture" : "https://i1.wp.com/kirktaylor.com/wp-content/uploads/how-do-you-roll-shark-tank.jpg?resize=1080%2C608&ssl=1",
-         "sharks" : ["Kevin O'Leary"]
+         "sharks" : ["Kevin O'Leary"],
+         "sharksURL" : ["Kevin_Oleary"]
          },
          {
          "id" : 4,
          "name" : "Jump Forward",
+         "url" : "Jump_Forward",
          "episode" : "6-11",
          "founders" : ["Brian Duggan", "Adam McCombs"],
          "location" : "Chicago, IL",
@@ -100,11 +119,13 @@ sample = {
          "investment" : "150,000",
          "equity" : "10%",
          "picture" : "https://gazettereview.com/wp-content/uploads/2016/04/Featured-9-e1459724712300.jpg?resize=1080%2C608&ssl=1",
-         "sharks" : ["Robert Herjavec", "Kevin O'Leary"]
+         "sharks" : ["Robert Herjavec", "Kevin O'Leary"],
+         "sharksURL" : ["Kevin_Oleary", "Robert_Herjavec"]
           },
          {
           "id" : 5,
           "name" : "Zero Pollution Motors",
+          "url" : "Zero Pollution Motors",
           "episode" : "6-27",
           "founders" : ["Ethan Tucker", "Pat Boone"],
           "location" : "New Paltz, NY",
@@ -112,11 +133,13 @@ sample = {
           "investment" : "5,000,000",
           "equity" : "50%",
           "picture" : "https://upload.wikimedia.org/wikipedia/commons/a/a4/MDI_Air_Pod_%281%29.JPG?resize=1080%2C608&ssl=1",
-          "sharks" : ["Robert Herjavec"]
+          "sharks" : ["Robert Herjavec"],
+          "sharksURL" : ["Robert_Herjavec"]
          },
          {
           "id" : 6,
           "name" : "Chord Buddy",
+          "url" : "Chord_Buddy",
           "episode" : "3-3",
           "founders" : ["Travis Perry"],
           "location" : "New Paltz, NY",
@@ -124,11 +147,13 @@ sample = {
           "investment" : "175,000",
           "equity" : "20%",
           "picture" : "https://www.sharktankblog.com/wp-content/uploads/Chord-Buddy-on-Shark-Tank-Show.jpg?resize=1080%2C608&ssl=1",
-          "sharks" : ["Robert Herjavec"]
+          "sharks" : ["Robert Herjavec"],
+          "sharksURL" : ["Robert_Herjavec"]
          },
         {
           "id" : 7,
           "name" : "Hillbilly Brand",
+          "url" : "Hillbilly_Brand",
           "episode" : "2-4",
           "founders" : ["Mike Abbaticchio", "Shon Lees"],
           "location" : "Parkland, FL",
@@ -136,11 +161,13 @@ sample = {
           "investment" : "75,000",
           "equity" : "100%",
           "picture" : "https://2paragraphs.com/wp-content/uploads/2017/05/Hill-Billy-Brand-620x373.jpg?resize=1080%2C608&ssl=1",
-          "sharks" : ["Jeff Foxworthy", "Robert Herjavec", "Daymond John"]
+          "sharks" : ["Jeff Foxworthy", "Robert Herjavec", "Daymond John"],
+          "sharksURL" : ["Jeff_Foxworthy", "Robert_Herjavec", "Daymond_John"]
          },
          {
          "id" : 8,
          "name": "BeatBox Beverages",
+         "url": "BeatBox_Beverages",
          "episode" : "6-6",
          "founders" : ["Brad Schultz", "Aimy Steadman", "Justin Fenchel"],
          "location" : "Austin, TX",
@@ -148,11 +175,13 @@ sample = {
          "investment" : "1,000,000",
          "equity" : "33%",
          "picture" : "https://2paragraphs.com/wp-content/uploads/2015/09/MG_9741-620x375.jpg?resize=1080%2C608&ssl=1",
-         "sharks" : ["Mark Cuban"]
+         "sharks" : ["Mark Cuban"],
+         "sharksURL" : ["Mark_Cuban"]
          },
          {
           "id" : 9,
           "name" : "Happy Feet",
+          "url" : "Happy_Feet",
           "episode" : "5-23",
           "founders" : ["Pat Yates"],
           "location" : "    Louisville, KY",
@@ -160,11 +189,13 @@ sample = {
           "investment" : "375,000",
           "equity" : "25%",
           "picture" : "https://www.robertherjavec.com/wp-content/uploads/2016/04/dreamworks_banner_red_carpet2.jpg?resize=1080%2C608&ssl=1",
-          "sharks" : ["Robert Herjavec"]
+          "sharks" : ["Robert Herjavec"],
+          "sharksURL" : ["Robert_Herjavec"]
          },
          {
            "id" : 10,
            "name": "Gameday Couture",
+           "url": "Gameday_Couture",
            "episode" : "6-11",
            "founders" : ["Shawna Feddersen", "Kurt Feddersen"],
            "location" : "Tulsa, OK",
@@ -172,11 +203,13 @@ sample = {
            "investment" : "500,000",
            "equity" : "30%",
            "picture" : "http://lionessmagazine.com/wp-content/uploads/2016/04/game-try.jpg?resize=1080%2C608&ssl=1",
-           "sharks" : ["Mark Cuban"]
+           "sharks" : ["Mark Cuban"],
+           "sharksURL" : ["Mark_Cuban"]
          },
          {
            "id" : 11,
            "name": "LOLIWARE",
+           "url": "LOLIWARE",
            "episode" : "7-2",
            "founders" : ["Leigh Ann Tucker","Chelsea Briganti"],
            "location" : "New York, NY",
@@ -184,11 +217,13 @@ sample = {
            "investment" : "600,000",
            "equity" : "25%",
            "picture" : "http://youthindependent.com/wp-content/uploads/7233713498_9db1acc90a_b-660x330.jpg?resize=1080%2C608&ssl=1",
-           "sharks" : ["Barbara Corcoran", "Mark Cuban"]
+           "sharks" : ["Barbara Corcoran", "Mark Cuban"],
+           "sharksURL" : ["Barbara_Corcoran", "Mark_Cuban"]
          },
          {
            "id" : 12,
            "name": "Villy Customs",
+           "url": "Villy_Customs",
            "episode" : "3-13",
            "founders" : ["Fleetwood Hicks"],
            "location" : "Dallas, TX",
@@ -196,11 +231,13 @@ sample = {
            "investment" : "500,000",
            "equity" : "42%",
            "picture" : "https://ksr-ugc.imgix.net/assets/016/735/400/1a384cc3fd412943165dda1dcdf1fbb8_original.png?ixlib=rb-1.1.0&crop=faces&w=1552&h=873&fit=crop&v=1497025005&auto=format&frame=1&q=92&s=2ac25173b6a1442d59abd742c20f2840",
-           "sharsk" : ["Barbara Corcoran", "Mark Cuban"]
+           "sharks" : ["Barbara Corcoran", "Mark Cuban"],
+           "sharksURL" : ["Barbara_Corcoran", "Mark_Cuban"]
          },
          {
            "id" : 13,
            "name" : "TITIN",
+           "url" : "TITIN",
            "episode" : "6-7",
            "founders" : ["Patrick Whaley"],
            "location" : "Atlanta, GA",
@@ -208,11 +245,13 @@ sample = {
            "investment" : "500,000",
            "equity" : "20%",
            "picture" : "https://gazettereview.com/wp-content/uploads/2016/04/titin2.jpg?resize=1080%2C608&ssl=1",
-           "sharks" : ["Daymond John"]
+           "sharks" : ["Daymond John"],
+           "sharksURL" : ["Daymond_John"]
          },
         {
            "id" : 14,
            "name" : "One Sole",
+           "url" : "One_Sole",
            "episode" : "2-9",
            "founders" : ["Dominique McClain Barteet"],
            "location" : "Palm City, FL",
@@ -220,11 +259,13 @@ sample = {
            "investment" : "500,000",
            "equity" : "35%",
            "picture" : "https://2paragraphs.com/wp-content/uploads/2017/08/OneSole-620x375.jpg?resize=1080%2C608&ssl=1",
-           "sharks" : ["Daymond John"]
+           "sharks" : ["Daymond John"],
+           "sharksURL" : ["Daymond_John"]
          },
          {
            "id" : 15,
            "name" : "Hells Bells Helmet",
+           "url" : "Hells_Bells_Helmet",
            "episode" : "1-11",
            "founders" : ["Marix Stone", "Dr. Nancy Tanchel"],
            "location" : "Philadelphia, PA",
@@ -232,11 +273,13 @@ sample = {
            "investment" : "500,000",
            "equity" : "50%",
            "picture" : "http://sharktankshopper.com/wp-content/uploads/2014/02/Hells-Bells-Helmets.jpg?resize=1080%2C608&ssl=1",
-           "sharks" : ["Daymond John"]
+           "sharks" : ["Daymond John"],
+           "sharksURL" : ["Daymond_John"]
          },
          {
            "id" : 16,
            "name" : "Spikeball",
+           "url" : "Spikeball",
            "episode" : "6-29",
            "founders" : ["Chris Ruder"],
            "location" : "Chicago, IL",
@@ -244,7 +287,8 @@ sample = {
            "investment" : "500,000",
            "equity" : "22%",
            "picture" : "http://productsofsharktank.com/wp-content/uploads/2015/05/spikeball.jpg?resize=1080%2C608&ssl=1",
-           "Sharks" : ["Daymond John"]
+           "sharks" : ["Daymond John"],
+           "sharksURL" : ["Daymond_John"]
          }
     ]
 }

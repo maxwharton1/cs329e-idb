@@ -1,8 +1,14 @@
 {% extends 'layout.html' %}
 {% block body %}
 
-  <div class = "list-group", id="list"></div>
-  <script>deals({{books}})</script>
+{% if books == [] %}
+  <p>No deals exists</p>
+{% else %}
+  {% for thisDeal in books%}
 
+    <a href= "../company/{{thisDeal.url}}" class= "list-group-item list-group-item-action active">{{thisDeal.name}}</a>
+
+  {% endfor %}
+{% endif %}
 
 {% endblock %}

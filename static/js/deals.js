@@ -15,18 +15,20 @@ function deals(books){
   }
 }
 
-function thisShark(deals, shark){
-  shark = shark[0] //only one shark was passed in
+function thisShark(shark){
 
+  //var shark = {{ shark | tojson | safe}};
+  console.log(typeof shark);
+  shark = shark[0];//only one shark was passed in
   document.getElementById('info').innerHTML += "<img src= " + shark.picture + "alt='picture' class='img-thumbnail'><br></br>";
   for (var key in shark){
     if (key == "investments"){continue}
     document.getElementById('info').innerHTML += key + ": "+ shark[key] + "<br></br>"; //displays every element in the dict
   }
 
-  for (var l in deals){
-    url = toURL(l.name)
-    document.getElementById('list').innerHTML += '<a href = ../company/' + url + ' class = "list-group-item list-group-item-action active">'+ l.name + '</a>';
+  for (var l in shark.investments){
+    url = toURL(l)
+    document.getElementById('list').innerHTML += '<a href = ../company/' + url + ' class = "list-group-item list-group-item-action active">'+ l + '</a>';
   }
 }
 

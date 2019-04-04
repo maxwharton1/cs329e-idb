@@ -1,10 +1,40 @@
 {% extends 'layout.html' %}
 {% block body %}
 
-  <div id = "info"></div>
 
-  <div class = "list-group", id="list"></div>
-  <script>thisShark({{deals}}, {{shark}})</script>
+    {% if shark == [] %}
+			<p>No shark exists</p>
+		{% else %}
+      {% for thisShark in shark%}
+        <img src= "{{thisShark.picture}}" alt= "picture" class= "img-thumbnail"><br></br>
+        {{shark.name}}<br></br>
+        Amount Invested: {{thisShark.invested}} <br></br>
+        Number of Deals: {{thisShark.deals}} <br></br>
+        Episodes: {{thisShark.episodes}}<br></br>
+
+        <div class = "list-group", id="list">
+
+             {% for i in range(thisShark.investments | length)%}
+                <a href= "../company/{{thisShark.investmentsURL[i]}}" class= "list-group-item list-group-item-action active">{{thisShark.investments[i]}}</a>
+             {% endfor %}
+			  </div>
+
+			{% endfor %}
+		{% endif %}
+
+
+
+
+    <!--
+    {% for s in shark %}
+      anything
+      {% for invest in s['investments'] %}
+        <a href = "company/{{ s.url }}" class = "list-group-item list-group-item-action active"> {{invest}} + </a>
+      {% endfor %}
+    {% endfor %}
+  </div>
+  -->
+  <!-- <script>thisShark()</script> -->
 
 
 {% endblock %}

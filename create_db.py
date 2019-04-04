@@ -14,18 +14,22 @@ def create_sharks():
 
     for oneShark in sharks1['sharks']:
         name = oneShark['name']
+        url = oneShark['url']
         invested = oneShark['invested']
         deals = oneShark['deals']
         episodes = oneShark['episodes']
         picture = oneShark['picture']
         investments = oneShark['investments']
+        investmentsURL = oneShark['investmentsURL']
 
         newShark = Shark(name = name,
+                        url = url,
                         invested = invested,
                         deals = deals,
                         episodes = episodes,
                         picture = picture,
-                        investments = investments)
+                        investments = investments,
+                        investmentsURL = investmentsURL)
 
         db.session.add(newShark)
         db.session.commit()
@@ -36,6 +40,7 @@ def create_deals():
     for oneDeal in deals['deals']:
         name = oneDeal["name"]
         id = oneDeal["id"]
+        url = oneDeal["url"]
         episode = oneDeal["episode"]
         founders = oneDeal["founders"]
         location = oneDeal["location"]
@@ -44,9 +49,11 @@ def create_deals():
         equity = oneDeal["equity"]
         picture = oneDeal["picture"]
         sharks = oneDeal["sharks"]
+        sharksURL = oneDeal["sharksURL"]
 
-        newDeal= Shark(name = name,
+        newDeal= Investment(name = name,
                         id = id,
+                        url = url,
                         episode = episode,
                         founders = founders,
                         location = location,
@@ -54,7 +61,8 @@ def create_deals():
                         investment = investment,
                         equity = equity,
                         picture = picture,
-                        sharks = sharks)
+                        sharks = sharks,
+                        sharksURL = sharksURL)
 
         db.session.add(newDeal)
         db.session.commit()

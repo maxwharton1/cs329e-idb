@@ -1,8 +1,16 @@
 {% extends 'layout.html' %}
 {% block body %}
 
-  <div class = "list-group", id="list"></div>
-  <script>test({{books}})</script>
+{% if books == [] %}
+  <p>No sharks exists</p>
+{% else %}
+  {% for thisShark in books%}
+
+    <a href= "../shark/{{thisShark.url}}" class= "list-group-item list-group-item-action active">{{thisShark.name}}</a>
+
+
+  {% endfor %}
+{% endif %}
 
 
 {% endblock %}

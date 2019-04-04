@@ -1,8 +1,7 @@
 from flask import Flask, render_template
-from create_db import app, db, Book, create_books
-from format import toURL, fromURL
+import subprocess
+from create_db import app, db, Shark, Investment, create_sharks, create_deals
 
-app = Flask(__name__)
 
 @app.route('/')
 def index():
@@ -21,22 +20,31 @@ def deals():
 
 @app.route('/shark/<shark>')
 def thisShark(shark):
-    sharkName = fromURL(shark)
-    #filter beneath this statement is a little sketchy
-    #books = db.session.query(Deal).filter(shark ==  ds.lower() for ds in Deal.sharks)
-    deals = db.session.query(Deal).filter(sharkName in Deals.sharks) #checks the deals that have our current shark in the array of names
-    shark = db.session.query(Shark).filter(Shark.name == sharkName)
-    return render_template('thisShark.html', deals = deals, shark = shark)
+
+    shark = db.session.query(Shark).filter(Shark.url == shark)
+    return render_template('thisShark.html', shark = shark)
 
 @app.route('/company/<thisComp>')
 def thisComp(thisComp):
-    thisComp = fromURL(thisComp)
-    deals = db.session.query(Deal).filter(Deal.name == thisComp)
-    return render_template('thisComp.html', deals = deals)
+
+    deal = db.session.query(Investment).filter(Investment.url == thisComp)
+    return render_template('thisComp.html', deal = deal)
 
 @app.route('/about')
 def about():
     return render_template('about.html')
+
+@app.route('/test')
+def test():
+    p = subprocess.Popen(["coverage", "run", "--branch", "test.py"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            stdin=subprocess.PIPE)
+    out, err = p.communicate()
+    output=err+out
+    output = output.decode("utf-8") #convert from byte type to string type
+
+    return render_template('test.html', output = "<br/>".join(output.split("\n")))
 
 if __name__ == "__main__":
 
