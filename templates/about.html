@@ -1,5 +1,28 @@
 {% extends 'layout.html' %}
 {% block body %}
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+
+
+
+
   <a href= "/test">Link to Test Page</a><br></br>
   <div id = "info"></div>
   Group Members
@@ -29,6 +52,52 @@
     Bio: Third year Mechanical Economics major working towards Elements of Computing certificate. Enjoys guitar, video games, and working with computers.<br></br>
     Major Responsibilities: About page and image maintenece.<br></br>
   </div>
+
+
+  <table>
+    <tr>
+  	  <th>Name</th>
+  	  <th>Commits</th>
+  	  <th>Issues</th>
+  	  <th>Unit Tests</th>
+  	</tr>
+  	<tr>
+      <td>Pierce Kotarski</td>
+      <td>#commits</td>
+      <td>0</td>
+      <td>#UT</td>
+    </tr>
+    <tr>
+      <td>Bryan Lee</td>
+      <td>#commits</td>
+      <td>0</td>
+      <td>#UT</td>
+    </tr>
+    <tr>
+      <td>Max Wharton</td>
+      <td>#commits</td>
+      <td>12</td>
+      <td>#UT</td>
+    </tr>
+    <tr>
+      <td>Will McPherson</td>
+      <td>#commits</td>
+      <td>16</td>
+      <td>#UT</td>
+    </tr>
+    <tr>
+      <td>Braxton Mills</td>
+      <td>#commits</td>
+      <td>2</td>
+      <td>#UT</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>Total#</td>
+      <td>30</td>
+      <td>total#</td>
+    <tr>
+  </table>
   <a href="test.html" class="btn-lg" role="button">Test</a> <!--link to test page-->
 
 
