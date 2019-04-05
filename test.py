@@ -3,6 +3,7 @@ import sys
 import unittest
 from models import db, Shark, Investment
 class DBTestCases(unittest.TestCase):
+	#these tests have not been run yet and may not work
 	
 	#tests if inserting a shark in to the db works
 	def test_source_insert_1(self):
@@ -14,7 +15,7 @@ class DBTestCases(unittest.TestCase):
 		db.session.query(Shark).filter_by(name='Bob Ross').delete()
 		db.session.commit()
 	def test_source_insert_2(self):
-		s = Shark(name='Barack Obama',picture='https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/480px-President_Barack_Obama.jpg'
+		s = Shark(name='Barack Obama',picture='https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/480px-President_Barack_Obama.jpg')
 		db.session.add(s)
 		db.session.commit()
 		r = db.session.query(Shark).filter_by(name='Barack Obama').one()
@@ -22,7 +23,7 @@ class DBTestCases(unittest.TestCase):
 		db.session.query(Shark).filter_by(name='Barack Obama').delete()
 		db.session.commit()
 	def test_source_insert_3(self):
-		s = Shark(name='Obi Wan Kenobi',picture='https://vignette.wikia.nocookie.net/swfans/images/d/d1/ObiWanKenobi.jpg/revision/latest?cb=20130604153336'
+		s = Shark(name='Obi Wan Kenobi',picture='https://vignette.wikia.nocookie.net/swfans/images/d/d1/ObiWanKenobi.jpg/revision/latest?cb=20130604153336')
 		db.session.add(s)
 		db.session.commit()
 		r = db.session.query(Shark).filter_by(name='Obi Wan Kenobi').one()
