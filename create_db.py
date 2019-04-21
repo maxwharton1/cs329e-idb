@@ -18,6 +18,7 @@ def create_sharks():
         invested = oneShark['invested']
         deals = oneShark['deals']
         episodes = oneShark['episodes']
+        base = oneShark['base']
         picture = oneShark['picture']
         investments = oneShark['investments']
         investmentsURL = oneShark['investmentsURL']
@@ -25,6 +26,7 @@ def create_sharks():
         newShark = Shark(name = name,
                         url = url,
                         invested = invested,
+                        base = base,
                         deals = deals,
                         episodes = episodes,
                         picture = picture,
@@ -41,6 +43,7 @@ def create_deals():
         name = oneDeal["name"]
         id = oneDeal["id"]
         url = oneDeal["url"]
+        base = oneDeal['base']
         episode = oneDeal["episode"]
         founders = oneDeal["founders"]
         location = oneDeal["location"]
@@ -57,6 +60,7 @@ def create_deals():
                         episode = episode,
                         founders = founders,
                         location = location,
+                        base = base,
                         description = description,
                         investment = investment,
                         equity = equity,

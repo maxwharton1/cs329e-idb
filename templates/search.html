@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% block body %}
+<!-- Search is a [[],[]]-->
+
+{% if found == [] %}
+  <p>No search results exists</p>
+{% else %}
+  {% for i in found%}
+    {% for j in i%}
+
+
+      <a href= "../{{j.base}}{{j.url}}" class= "list-group-item list-group-item-action active">{{j.name}}</a>
+      <!-- you may need a procedure to take out repetitions -->
+  {% endfor %}
+{% endif %}
+
+
+{% endblock %}
