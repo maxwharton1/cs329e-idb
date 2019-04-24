@@ -8,8 +8,8 @@
             "base" : "shark/",
             "episodes" : 131,
             "picture" : "https://s.abcnews.com/images/Business/GTY_kevin_oleary_2_kab_150929_16x9_992.jpg?resize=1080%2C608&ssl=1",
-            "investments" : ["Zipz","Toygaroo","How Do You Roll?","Jump Forward"],
-            "investmentsURL" : ["Zipz","Toygaroo","How_Do_You_Roll?","Jump_Forward"]
+            "investments" : ["Zipz","Toygaroo","How Do You Roll?","Jump Forward", "Drive Suits", "Talbott Teas", "PittMoss", "UniKey Technologies", "Grease Monkey Wipes"],
+            "investmentsURL" : ["Zipz","Toygaroo","How_Do_You_Roll?","Jump_Forward", "Drive_Suits", "Talbott_Teas", "PittMoss", "UniKey_Technologies", "Grease_Monkey_Wipes"]
         },
 
         {
@@ -20,8 +20,8 @@
            "base" : "shark/",
            "episodes" : 126,
            "picture" : "https://amp.businessinsider.com/images/56ad203b58c3238d008b69be-750-562.jpg?resize=1080%2C608&ssl=1",
-           "investments" : ["Jump Forward","Zero Pollution Motors","Chord Buddy","Hillbilly Brand","Happy Feet"],
-           "investmentsURL" : ["Jump_Forward","Zero_Pollution_Motors","Chord_Buddy","Hillbilly_Brand","Happy_Feet"]
+           "investments" : ["Jump Forward","Zero Pollution Motors","Chord Buddy","Hillbilly Brand","Happy Feet", "Oru Kayak", "EmazingLights", "PittMoss"],
+           "investmentsURL" : ["Jump_Forward","Zero_Pollution_Motors","Chord_Buddy","Hillbilly_Brand","Happy_Feet", "Oru_Kayak", "EmazingLights", "PittMoss"]
 
         },
         {
@@ -32,8 +32,8 @@
            "deals" : 2,
            "episodes" : 2,
            "picture" : "https://cdn1.edgedatg.com/aws/v2/abc/SharkTank/episode/248748/dd11ddb14c1c532d471586d92c7c99c7/1228x691-Q90_dd11ddb14c1c532d471586d92c7c99c7.jpg?resize=1080%2C608&ssl=1",
-           "investments" : ["Hillbilly Brand"],
-           "investmentsURL" : ["Hillbilly_Brand"]
+           "investments" : ["Hillbilly Brand", "Hydromax"],
+           "investmentsURL" : ["Hillbilly_Brand", "Hydromax"]
         },
         {
           "name" : "Mark Cuban",
@@ -43,8 +43,8 @@
           "deals" : 85,
           "episodes" : 111,
           "picture" : "https://static.businessinsider.com/image/548a1d946bb3f7097aa03d8a-750.jpg?resize=1080%2C608&ssl=1",
-          "investments" : ["Toygaroo","BeatBox Beverages","Gameday Couture","LOLIWARE","Villy Customs"],
-          "investmentsURL" : ["Toygaroo","BeatBox_Beverages","Gameday_Couture","LOLIWARE","Villy_Customs"]
+          "investments" : ["Toygaroo","BeatBox Beverages","Gameday Couture","LOLIWARE","Villy Customs", "Melni Connectors", "EmazingLights", "CoolWraps", "Noene USA", "PittMoss", "UniKey Technologies"],
+          "investmentsURL" : ["Toygaroo","BeatBox_Beverages","Gameday_Couture","LOLIWARE","Villy_Customs", "Melni_Connectors", "EmazingLights", "CoolWraps", "Noene_USA", "PittMoss", "UniKey_Technologies"]
         },
         {
           "name" : "Daymond John",
@@ -54,8 +54,8 @@
           "base" : "shark/",
           "episodes" : 100,
           "picture" : "https://amp.businessinsider.com/images/55ad68802acae78b0e8b8204-750-562.jpg?resize=1080%2C608&ssl=1",
-          "investments" : ["Hillbilly Brand","TITIN","One Sole","Hells Bells Helmet","Spikeball"],
-          "investmentsURL" : ["Hillbilly_Brand","TITIN","One_Sole","Hells_Bells_Helmet","Spikeball"]
+          "investments" : ["Hillbilly Brand","TITIN","One Sole","Hells Bells Helmet","Spikeball", "GoGoGear", "180 Cup", "Gayla Bentley Fashion", "Noene USA"],
+          "investmentsURL" : ["Hillbilly_Brand","TITIN","One_Sole","Hells_Bells_Helmet","Spikeball", "GoGoGear", "180_Cup", "Gayla_Bentley_Fashion", "Noene_USA"]
         },
         {
           "name" : "Barbara Corcoran",
@@ -65,8 +65,8 @@
           "deals" : 53,
           "episodes" : 82,
           "picture" : "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2013/11/26/101229657-shark-tank-barbara-corcoran.jpg?v=1502890423?resize=1080%2C608&ssl=1",
-          "investments" : ["LOLIWARE","Villy Customs"],
-          "investmentsURL" : ["LOLIWARE","Villy_Customs"]
+          "investments" : ["LOLIWARE","Villy Customs", "Gayla Bentley Fashion", "Grease Monkey Wipes"],
+          "investmentsURL" : ["LOLIWARE","Villy_Customs", "Gayla_Bentley_Fashion", "Grease_Monkey_Wipes"]
         }
     ],
 
@@ -311,6 +311,202 @@
            "picture" : "http://productsofsharktank.com/wp-content/uploads/2015/05/spikeball.jpg?resize=1080%2C608&ssl=1",
            "sharks" : ["Daymond John"],
            "sharksURL" : ["Daymond_John"]
+         },
+         {
+           "id" : 17,
+           "name" : "Hydromax",
+           "url" : "Hydromax",
+           "episode" : "2-7",
+           "founders" : ["Chris Spencer"],
+           "location" : "Houston, TX",
+           "description" : "An impact-resistant hydration system that attaches to shoulder pads, aimed at football players in training.",
+           "investment" : "100,000",
+           "equity" : "50%",
+           "picture" : "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiKgNmE2unhAhVGSK0KHSuoDB4QjRx6BAgBEAU&url=https%3A%2F%2F2paragraphs.com%2F2016%2F08%2Fhydromax-what-happened-to-football-pouch-after-shark-tank%2F&psig=AOvVaw29Ur4ykL3RfqTU8PrqwJAe&ust=1556228754010357",
+           "sharks" : ["Jeff Foxworthy"],
+           "sharksURL" : ["Jeff_Foxworthy"]
+         },
+         {
+           "id" : 18,
+           "name" : "Drive Suits",
+           "url" : "Drive_Suits",
+           "episode" : "4-9",
+           "founders" : ["Drew Beaumier"],
+           "location" : "Burbank, CA",
+           "description" : "Costumes that instantaneously transform the wearer from a human into a motorized vehicle.",
+           "investment" : "150,000",
+           "equity" : "20%",
+           "picture" : "https://2paragraphs.com/wp-content/uploads/2015/12/drive-suit-620x312.jpg",
+           "sharks" : ["Kevin Oleary"],
+           "sharksURL" : ["Kevin_Oleary"]
+         },
+         {
+           "id" : 19,
+           "name" : "Oru Kayak",
+           "url" : "Oru_Kayak",
+           "episode" : "5-28",
+           "founders" : ["Anton Willis"],
+           "location" : "San Fransisco, CA",
+           "description" : "A portable kayak made possible by an origami-inspired design that transforms from a compact suitcase into an elegant, high-performance 12-foot boat.",
+           "investment" : "500,000",
+           "equity" : "12%",
+           "picture" : "https://gazettereview.com/wp-content/uploads/2015/08/oru-kayak-on-shark-tank.png",
+           "sharks" : ["Robert Herjavec"],
+           "sharksURL" : ["Robert_Herjavec"]
+         },
+         {
+           "id" : 20,
+           "name" : "Melni Connectors",
+           "url" : "Melni_Connectors",
+           "episode" : "6-25",
+           "founders" : ["Byron Dunn", "Mark Melni", "Armand Eckert"],
+           "location" : "Twin Falls, ID",
+           "description" : "Faster, safer, ergonomically correct and cost-effective connectors for electric power.",
+           "investment" : "500,000",
+           "equity" : "5%",
+           "picture" : "http://www.melniconnectors.com/wp-content/uploads/2014/09/Shark-Tank-2-1.jpg",
+           "sharks" : ["Mark Cuban"],
+           "sharksURL" : ["Mark_Cuban"]
+         },
+         {
+           "id" : 21,
+           "name" : "EmazingLights",
+           "url" : "EmazingLights",
+           "episode" : "6-22",
+           "founders" : ["Brian Lim"],
+           "location" : "Los Angeles, CA",
+           "description" : "EmazingLights is pioneering the new Gloving Movement into a skillful expression of art, along with iHeartRaves, which provides wildly unique festival fashion for Raves, Festivals and Beyond.",
+           "investment" : "650,000",
+           "equity" : "5%",
+           "picture" : "https://gazettereview.com/wp-content/uploads/2016/07/emazing2.jpg",
+           "sharks" : ["Mark Cuban", "Robert Herjavec"],
+           "sharksURL" : ["Mark_Cuban", "Robert_Herjavec"]
+         },
+         {
+           "id" : 22,
+           "name" : "Coolwraps",
+           "url" : "Coolwraps",
+           "episode" : "4-20",
+           "founders" : ["Jeffrey MIller"],
+           "location" : "Green Cove Springs, FL",
+           "description" : "An easy-to-use shrink-wrap gift bag.",
+           "investment" : "250,000",
+           "equity" : "100%",
+           "picture" : "https://i1.wp.com/kirktaylor.com/wp-content/uploads/coolwraps-shark-tank.jpg?fit=1080%2C608&ssl=1",
+           "sharks" : ["Mark Cuban"],
+           "sharksURL" : ["Mark_Cuban"]
+         },
+         {
+           "id" : 23,
+           "name" : "GoGoGear",
+           "url" : "GoGoGear",
+           "episode" : "3-10",
+           "founders" : ["Arlene Battishill", "Desiree Estrada"],
+           "location" : "Los Angeles, CA",
+           "description" : "  A line of fully-protective and fashionable safety gear for people who ride scooters and motorcycles.",
+           "investment" : "300,000",
+           "equity" : "65%",
+           "picture" : "https://gazettereview.com/wp-content/uploads/2016/03/Goggear-founder-e1458662437486.jpg",
+           "sharks" : ["Daymond John"],
+           "sharksURL" : ["Daymond_John"]
+         },
+         {
+           "id" : 24,
+           "name" : "180 Cup",
+           "url" : "180_Cup",
+           "episode" : "5-7",
+           "founders" : ["Solomon Fallas"],
+           "location" : "New York, NY",
+           "description" : "180 Cup is a plastic drinking cup that, when turned over, has a smaller-size cup which could be used as a shot glass, ash tray, or other purposes.",
+           "investment" : "300,000",
+           "equity" : "25%",
+           "picture" : "https://images-na.ssl-images-amazon.com/images/I/518%2BC-lYmNL._SL1034_.jpg",
+           "sharks" : ["Daymond John"],
+           "sharksURL" : ["Daymond_John"]
+         },
+         {
+           "id" : 25,
+           "name" : "Gayla Bentley Fashion",
+           "url" : "Gayla_Bentley_Fashion",
+           "episode" : "1-9",
+           "founders" : ["Gayla Bentley"],
+           "location" : "Houston, TX",
+           "description" : "Women's apparel specially designed for sizes 12 to 18.",
+           "investment" : "250,000",
+           "equity" : "50%",
+           "picture" : "https://gazettereview.com/wp-content/uploads/2016/04/Featured-2-e1459530639719.jpg",
+           "sharks" : ["Daymond John", "Barbara Corcoran"],
+           "sharksURL" : ["Daymond_John", "Barbara_Corcoran"]
+         },
+         {
+           "id" : 26,
+           "name" : "Noene USA",
+           "url" : "Noene_USA",
+           "episode" : "6-26",
+           "founders" : ["Bryan Scott"],
+           "location" : "Atlanta, GA",
+           "description" : "Ultra-thin insoles that add protection without affecting the fit of your shoes or sneakers.",
+           "investment" : "200,000",
+           "equity" : "30%",
+           "picture" : "https://2paragraphs.com/wp-content/uploads/2016/05/Noene-620x375.jpg",
+           "sharks" : ["Mark Cuban", "Daymond John"],
+           "sharksURL" : ["Mark_Cuban", "Daymond_John"]
+         },
+         {
+           "id" : 27,
+           "name" : "Talbott Teas",
+           "url" : "Talbott_Teas",
+           "episode" : "3-5",
+           "founders" : ["Steve Nakisher", "Shane Talbott"],
+           "location" : "Emeryville, CA",
+           "description" : "Designer whole-leaf teas and accessories.",
+           "investment" : "250,000",
+           "equity" : "35%",
+           "picture" : "https://gazettereview.com/wp-content/uploads/2016/03/talbott-teas-shark-tank-shane-300x225.jpg",
+           "sharks" : ["Kevin Oleary"],
+           "sharksURL" : ["Kevin_Oleary"]
+         },
+         {
+           "id" : 28,
+           "name" : "PittMoss",
+           "url" : "PitMoss",
+           "episode" : "6-25",
+           "founders" : ["Mont Handley"],
+           "location" : "Pittsburgh, PA",
+           "description" : "  An environmentally-friendly alternative to peat moss made from recycled paper and a proprietary mix of organic additives. Using PittMoss instead of peat eliminates the need for chemical additives and controls for pH imbalances, insects, molds and weed seeds, and releases far less CO2 into the atmosphere.",
+           "investment" : "600,000",
+           "equity" : "35%",
+           "picture" : "https://www.incimages.com/uploaded_files/image/1940x900/PittMoss[1]_54825.jpg",
+           "sharks" : ["Mark Cuban", "Kevin Oleary", "Robert Herjavec"],
+           "sharksURL" : ["Mark_Cuban", "Kevin_Oleary", "Robert_Herjavec"]
+         },
+         {
+           "id" : 29,
+           "name" : "UniKey Technologies",
+           "url" : "UniKey_Technologies",
+           "episode" : "3-15",
+           "founders" : ["Phil Dumas"],
+           "location" : "Orlando, FL",
+           "description" : "  UniKey provides a smart lock system called Kevo that works with smartphones and the specially-made Kevo fob.",
+           "investment" : "500,000",
+           "equity" : "40%",
+           "picture" : "https://1.bp.blogspot.com/-mq7MwyWQpg4/UT3QEty2kxI/AAAAAAAAGRw/jlFA4jt9QTA/s1600/UniKey+Technologies+on+Shark+Tank.jpg",
+           "sharks" : ["Mark Cuban", "Kevin Oleary"],
+           "sharksURL" : ["Mark_Cuban", "Kevin_Oleary"]
+         },
+         {
+           "id" : 30,
+           "name" : "Grease Monkey Wipes",
+           "url" : "Grease_Monkey_Wipes",
+           "episode" : "1-12",
+           "founders" : ["Tim Stansbury", "Erin Whalen"],
+           "location" : "Austin, TX",
+           "description" : "  Individually-packaged degreasing cleaning wipes formulated for cyclists to easily remove grease and grime from working on bicycles.",
+           "investment" : "40,000",
+           "equity" : "40%",
+           "picture" : "https://i1.wp.com/kirktaylor.com/wp-content/uploads/coolwraps-shark-tank.jpg?fit=1080%2C608&ssl=1",
+           "sharks" : ["Barbara Corcoran", "Kevin Oleary"],
+           "sharksURL" : ["Barbara_Corcoran", "Kevin_Oleary"]
          }
     ]
 }
